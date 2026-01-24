@@ -2996,4 +2996,26 @@ html.is-animating .fade-left {
 .project-info h3 {
   margin-bottom: 5px;
 }
+/* =====================================
+   MOBILE FIX: Work Experience Logos
+   ===================================== */
+@media (max-width: 768px) {
+
+  .credential-org {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .credential-logo {
+    max-width: 60px;   /* 👈 KEY FIX */
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .credential-org-name {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
 
