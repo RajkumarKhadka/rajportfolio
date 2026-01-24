@@ -16,7 +16,9 @@
     <!-- fancybox css -->
     <link rel="stylesheet" href="css/fancybox.min.css">
     <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style.css?v=5">
+
     <!--full image ko lagi-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 
@@ -836,11 +838,18 @@
                                  Github Link
                              </a>
 
-                              <a href="javascript:void(0)"
+                              <!--<a href="javascript:void(0)"
                                  onclick="openProject('ishara')"
                                  class="art-link art-color-link art-w-chevron">
                                  View Project
-                             </a>
+                             </a>-->
+                             <!-- View Project button -->
+                                <a href="#"
+                                  onclick="openProject('ishara'); return false;"
+                                   class="art-link art-color-link art-w-chevron">
+                                   View Project
+                                </a>
+
                             </div>
 
                           </div>
@@ -1695,7 +1704,9 @@
 
 
     <!-- main js -->
-    <script src="js/main.js"></script>
+    <!--<script src="js/main.js"></script> -->
+    <script src="js/main.js?v=5"></script>
+
 
     <!--thapeko image full screen ko lagi-->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
@@ -1707,6 +1718,16 @@
           });
         </script>
         <!--project pop up-->
+
+    <!--mobile ma nadekhekoi issue-->
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+      registrations.forEach(registration => registration.unregister());
+    });
+  }
+</script>
+
         
 
 </body></html>
