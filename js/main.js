@@ -5,7 +5,7 @@ Version:  1.0
 Author:		Nazar Miller (millerDigitalDesign)
 Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
 
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
+p.s. Ready for new opportunities (UI design, web development). mail: miller.themes@gmail.com
 
 ------------------------------------------- */
 $(function () {
@@ -656,3 +656,89 @@ $(function () {
     });
   });
 });
+//project pop up ko lagi code
+let projectSwiper;
+
+function openProject(project) {
+  const slides = document.getElementById("projectSlides");
+  slides.innerHTML = "";
+
+  let data = {};
+
+  if (project === "ishara") {
+    data = {
+      title: "Ishara Setu",
+      year: "2025",
+      desc: "AI-powered Nepali Sign Language Detection System using TensorFlow and OpenCV. Converts gestures into real-time text and speech.",
+      media: [
+        "images/Ishara_Setu/ishara1.jpg",
+        "images/Ishara_Setu/ishara2.jpg",
+        "images/Ishara_Setu/ishara3.jpg",
+        "images/Ishara_Setu/ishara4.jpg",
+        "images/Ishara_Setu/ishara5.jpg",
+        "images/Ishara_Setu/ishara6.jpg",
+        "images/Ishara_Setu/ishara7.jpg",
+
+        //"videos/ishara-demo.mp4"
+      ]
+    };
+  }
+
+  if (project === "notera") {
+    data = {
+      title: "Notera",
+      year: "2024",
+      desc: "Notes Management System built using PHP and MySQL with authentication, session handling, and frontend UI.",
+      media: [
+        "images/Notera/notera1.jpg",
+        "images/Notera/notera2.jpg",
+        "images/Notera/notera3.jpg",
+        "images/Notera/notera4.jpg",
+        "images/Notera/notera5.jpg",
+        "images/Notera/notera6.jpg",
+        "images/Notera/notera7.jpg",
+      ]
+    };
+  }
+
+  // inject slides
+  data.media.forEach(item => {
+    if (item.endsWith(".mp4")) {
+      slides.innerHTML += `
+        <div class="swiper-slide">
+          <video controls>
+            <source src="${item}" type="video/mp4">
+          </video>
+        </div>`;
+    } else {
+      slides.innerHTML += `
+        <div class="swiper-slide">
+          <img src="${item}" />
+        </div>`;
+    }
+  });
+
+  document.getElementById("modalTitle").innerText = data.title;
+  document.getElementById("modalYear").innerText = data.year;
+  document.getElementById("modalDesc").innerText = data.desc;
+
+  document.getElementById("projectModal").style.display = "block";
+
+  setTimeout(() => {
+    if (projectSwiper) projectSwiper.destroy();
+    projectSwiper = new Swiper(".project-swiper", {
+      loop: true,
+      pagination: { el: ".swiper-pagination" },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+  }, 100);
+}
+
+function closeProject() {
+  document.getElementById("projectModal").style.display = "none";
+}
+
+//emd

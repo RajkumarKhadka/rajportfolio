@@ -1033,7 +1033,7 @@ info bar
 }
 .art-info-bar .art-header .art-avatar .art-lamp-light .art-available-lamp:after {
   position: relative;
-  content: 'I am available for freelance hire';
+  content: 'Ready for new opportunities';
   width: 115px;
   display: block;
   padding: 5px 10px;
@@ -2825,3 +2825,175 @@ html.is-animating .fade-left {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* ===== Credential Card ===== */
+
+.art-credential-card {
+  text-align: left;
+}
+
+.credential-header {
+  display: block;
+}
+
+.credential-org {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.credential-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.credential-text h5 {
+  margin: 0;
+}
+
+.credential-id {
+  font-size: 14px;
+}
+/* ===== Credential Card Fix ===== */
+
+.credential-org {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* override template block behavior */
+.credential-org-name {
+  display: inline-block !important;
+  white-space: nowrap;
+}
+
+.credential-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.credential-text .art-sm-text {
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+/* Slightly increase council + issued text size */
+.credential-text .art-sm-text {
+  font-size: 0.77rem;   /* default is ~0.85rem */
+  line-height: 1.4;
+}
+.credential-org-name {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  display: inline-block;
+  line-height: 1.4;
+}
+/* small breathing space below organization name */
+.credential-org {
+  margin-bottom: 4px; /* tiny gap, not noticeable but effective */
+}
+
+/* optional: slightly clearer separation */
+.art-sm-text {
+  line-height: 1.45;
+}
+
+.art-sm-text.issued-line {
+  font-style: italic !important;
+  opacity: 0.85;
+}
+.art-timeline .art-testimonial-face {
+  box-shadow: none;
+  margin: 0;
+}
+.art-timeline .credential-org {
+  margin-top: 4px;
+}
+
+.art-timeline .credential-logo {
+  width: 40px;
+  height: 40px;
+}
+/* Remove right-side vertical line for specific timeline item */
+.no-right-line .art-timeline-content {
+  border-right: none !important;
+}
+
+.no-right-line::after,
+.no-right-line::before {
+  display: none !important;
+}
+.art-date {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+}
+.art-credential-card:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
+}
+
+.art-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.art-modal-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.art-modal-content {
+  position: relative;
+  background: #1e1e28;
+  max-width: 600px;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.art-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.project-swiper {
+  height: 280px;
+  margin-bottom: 20px;
+}
+
+.project-swiper img,
+.project-swiper video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-info {
+  padding-top: 10px;
+}
+
+.project-info h3 {
+  margin-bottom: 5px;
+}
+
