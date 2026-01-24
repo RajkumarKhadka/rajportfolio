@@ -255,14 +255,14 @@
                 <div class="art-ls-divider"></div>
 
                 <!-- links frame -->
-                <div class="art-links-frame p-15-15">
+              <!--  <div class="art-links-frame p-15-15">
                   <!-- download cv button -->
                   <!--<a href="files/cv.txt" class="art-link" download="">Download cv <i class="fas fa-download"></i></a>-->
-                  <a href="files/cv.pdf" class="art-link" download="cv.pdf">
+               <!--   <a href="files/cv.pdf" class="art-link" download="cv.pdf">
                     Download CV <i class="fas fa-download"></i>
                 </a>
                 
-                </div>
+                </div>-->
                 <!-- links frame end -->
               </div>
               <!-- scroll frame end -->
@@ -303,6 +303,31 @@
             <div class="transition-fade" id="swup">
               <!-- scroll frame -->
               <div id="scrollbar" class="art-scroll-frame">
+                <!--sticky nabvar ko lagi code reyy-->
+                <!-- RIGHT COLUMN STICKY NAVBAR --><!--
+<div class="right-sticky-nav">
+  <ul>
+    <li><a href="#" data-target="what-i-provide">What I Provide</a></li>
+    <li><a href="#" data-target="work-experience">Work Experience</a></li>
+    <li><a href="#" data-target="education">Education</a></li>
+    <li><a href="#" data-target="projects">Projects</a></li>
+
+    <li class="dropdown">
+      <span>Certifications ▾</span>
+      <ul class="dropdown-menu">
+        <li><a href="#" data-target="professional-certifications">Professional</a></li>
+        <li><a href="#" data-target="course-certifications">Courses</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#" data-target="awards">Awards</a></li>
+    <li><a href="#" data-target="contact">Contact</a></li>
+  </ul>
+</div>
+-->
+                <!--sticky navbar ko code end reyy-->
+
+
                 <!-- container -->
                 <div class="container-fluid">
                   <!-- row -->
@@ -331,15 +356,17 @@
                             </div>
                             <div class="art-buttons-frame">
                               <!-- button -->
-                              <a href="mailto:rajkumarkd01@gmail.com
+                              <a href="files/cv.pdf" download="cv.pdf"
+                                  class="art-btn art-btn-md">
+                                    <span>Download CV</span>
+                                  </a>
+                              <!-- button -->
+                               <a href="mailto:rajkumarkd01@gmail.com
                                   ?subject=Work%20Opportunity
                                   &body=Hello%20Raj,%0A%0AI%20would%20like%20to%20discuss%20a%20work%20opportunity."
                                   class="art-btn art-btn-md">
                                     <span>Hire Me</span>
                                   </a>
-
-                              <!-- button -->
-                              <!--<a href="mailto:rajkumarkd01@gmail.com" class="art-link art-white-link art-w-chevron">Hire me</a>
                             </div>
                           </div>
                           <!-- main title end -->
@@ -444,7 +471,7 @@
                     <!-- col -->
                     <div class="col-lg-12">
                       <!-- section title -->
-                      <div class="art-section-title">
+                      <div class="art-section-title" id="what-i-provide">
                         <!-- title frame -->
                         <div class="art-title-frame">
                           <!-- title -->
@@ -625,7 +652,7 @@
 
                     <div class="col-lg-6">
                       <!-- section title -->
-                      <div class="art-section-title">
+                      <div class="art-section-title" id="work-experience">
                         <!-- title frame -->
                         <div class="art-title-frame">
                           <!-- title -->
@@ -709,7 +736,7 @@
 
                     <div class="col-lg-6">
                       <!-- section title -->
-                      <div class="art-section-title">
+                      <div class="art-section-title" id="education">
                         <!-- title frame -->
                         <div class="art-title-frame">
                           <!-- title -->
@@ -812,7 +839,7 @@
                     <!-- col -->
                     <div class="col-lg-6">
                       <!-- section title -->
-                      <div class="art-section-title">
+                      <div class="art-section-title" id="projects">
                         <!-- title frame -->
                         <div class="art-title-frame">
                           <!-- title -->
@@ -931,7 +958,7 @@
                     <!-- col -->
                     <div class="col-lg-12">
                       <!-- section title -->
-                      <div class="art-section-title">
+                      <div class="art-section-title" id="professional-certifications">
                         <!-- title frame -->
                         <div class="art-title-frame">
                           <!-- title -->
@@ -1008,7 +1035,7 @@
                     <!-- col -->
                     <div class="col-lg-12">
                       <!-- section title -->
-                      <div class="art-section-title">
+                      <div class="art-section-title" id="course-certifications">
                         <!-- title frame -->
                         <div class="art-title-frame">
                           <!-- title -->
@@ -1143,7 +1170,7 @@
                     <!-- col -->
                     <div class="col-lg-12">
                       <!-- section title -->
-                      <div class="art-section-title">
+                      <div class="art-section-title" id="awards">
                         <!-- title frame -->
                         <div class="art-title-frame">
                           <!-- title -->
@@ -1519,7 +1546,7 @@
                     <!-- col -->
                     <div class="col-lg-12">
                       <!-- section title -->
-                      <div class="art-section-title">
+                      <div class="art-section-title" id="contact">
                         <!-- title frame -->
                         <div class="art-title-frame">
                           <!-- title -->
@@ -1748,6 +1775,48 @@
   }
 </script>
 
-        
+  <!--stickybar ko smooth scroll ko lagi-->
+  <!--<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const scrollFrame = document.getElementById("scrollbar");
+
+  if (!scrollFrame) {
+    console.error("❌ scrollbar element not found");
+    return;
+  }
+
+  // Get Scrollbar.js instance
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const scrollFrame = document.getElementById("scrollbar");
+  if (!scrollFrame) return;
+
+  const scrollbarInstance = Scrollbar.get(scrollFrame);
+  if (!scrollbarInstance) return;
+
+  document.querySelectorAll(".right-sticky-nav a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const targetId = this.dataset.target;
+      const targetEl = document.getElementById(targetId);
+      if (!targetEl) return;
+
+      const scrollTop =
+        targetEl.getBoundingClientRect().top +
+        scrollbarInstance.scrollTop;
+
+      scrollbarInstance.scrollTo(0, scrollTop - 80, 600);
+    });
+  });
+
+});
+</script>
+-->
+
+<!--stickybar ko smooth scroll ko lagi end -->      
 
 </body></html>

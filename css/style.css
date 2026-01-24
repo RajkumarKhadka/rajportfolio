@@ -3018,4 +3018,159 @@ html.is-animating .fade-left {
     line-height: 1.4;
   }
 }
+/*pop up project thulo banaune css*/
+/* ===============================
+   PROJECT POPUP SIZE IMPROVEMENT
+   =============================== */
 
+.art-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 9999;
+}
+
+/* MAIN POPUP FRAME */
+.art-modal-content {
+  position: relative;
+  width: 85%;
+  max-width: 1100px;   /* ⬅ desktop size */
+  max-height: 85vh;
+  margin: 5vh auto;
+  padding: 30px;
+  background: #1e1e28;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* TEXT SCALING */
+#modalTitle {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+#modalYear {
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+#modalDesc {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* SWIPER CONTAINER */
+.project-swiper {
+  width: 100%;
+  height: 60vh;   /* ⬅ BIGGER image area */
+}
+
+/* IMAGE + VIDEO */
+.project-swiper img,
+.project-swiper video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* ⬅ NO CROPPING */
+  border-radius: 10px;
+}
+
+/* CLOSE BUTTON */
+.art-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ===============================
+   MOBILE OPTIMIZATION
+   =============================== */
+@media (max-width: 768px) {
+  .art-modal-content {
+    width: 95%;
+    max-height: 90vh;
+    padding: 20px;
+  }
+
+  .project-swiper {
+    height: 50vh;   /* mobile-friendly */
+  }
+
+  #modalTitle {
+    font-size: 22px;
+  }
+
+  #modalDesc {
+    font-size: 15px;
+  }
+}
+/*end*/
+/*sticky nabar ko lagi rey*/
+/* ===============================
+   RIGHT COLUMN STICKY NAVBAR
+   =============================== */
+/*
+.right-sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #1e1e28;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.right-sticky-nav ul {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.right-sticky-nav a,
+.right-sticky-nav span {
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.right-sticky-nav a:hover,
+.right-sticky-nav span:hover {
+  opacity: 1;
+  color: #ffc107;
+}
+
+/* DROPDOWN *//*
+.right-sticky-nav .dropdown {
+  position: relative;
+}
+
+.right-sticky-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  background: #2a2a35;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.right-sticky-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.right-sticky-nav .dropdown-menu li {
+  margin-bottom: 6px;
+}
+
+.right-sticky-nav .dropdown-menu li:last-child {
+  margin-bottom: 0;
+}*/
+/*end*/
