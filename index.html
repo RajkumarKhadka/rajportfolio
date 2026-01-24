@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="css/fancybox.min.css">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
+    <!--full image ko lagi-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
 
     <title>Raj Kumar Khadka</title>
   </head>
@@ -50,10 +53,11 @@
               <div class="art-header">
                 <!-- avatar -->
                 <div class="art-avatar">
-                  <a data-fancybox="avatar" href="img/Rajface.jpg" class="art-avatar-curtain">
-                    <img src="images/Rajface.jpg" alt="Raj Kumar Khadka">
-                    <i class="fas fa-expand"></i>
+                  <a href="images/face/rajface.png" data-fancybox class="art-avatar-curtain">
+                      <img src="images/face/rajface.png" alt="Raj Kumar Khadka">
+                      <i class="fas fa-expand"></i>
                   </a>
+
                   <!-- available -->
                   <div class="art-lamp-light">
                     <!-- add class 'art-not-available' if not available-->
@@ -305,14 +309,20 @@
                             </div>
                             <div class="art-buttons-frame">
                               <!-- button -->
-                              <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRCcWLScFmBHmzMfTmKgpdsQtJzNLPTlHTgCtKVpRptbHhzmwKmhGBQZQKhDfnWzDQPmQW" class="art-btn art-btn-md"><span>Contact Me</span></a>
+                              <a href="mailto:rajkumarkd01@gmail.com
+                                  ?subject=Work%20Opportunity
+                                  &body=Hello%20Raj,%0A%0AI%20would%20like%20to%20discuss%20a%20work%20opportunity."
+                                  class="art-btn art-btn-md">
+                                    <span>Hire Me</span>
+                                  </a>
+
                               <!-- button -->
                               <!--<a href="mailto:rajkumarkd01@gmail.com" class="art-link art-white-link art-w-chevron">Hire me</a>
                             </div>
                           </div>
                           <!-- main title end -->
                           <!-- photo -->
-                          <!--<img src="images/Raj.png" class="art-banner-photo" alt="Raj Kumar Khadka"> 
+                          <img src="images/face/rajfull.png" class="art-banner-photo" alt="Raj Kumar Khadka"> 
                         </div>
                         <!-- banner overlay end -->
                       </div>
@@ -615,9 +625,18 @@
                             <div class="art-card-header">
                               <div class="art-left-side">
                                 <h5>Lab Assistant / Visiting Faculty Member </h5>
-                                <div class="art-el-suptitle mb-15">
-                                  Nepal Engineering College(NEC), Bhaktapur, Nepal 
-                                </div>
+
+                                <!-- company + logo row -->
+                                <div class="credential-org">
+                              <img src="images/logo/nec_college_logo.png"
+                                  alt="Nepal Engineering Council"
+                                  class="art-testimonial-face credential-logo">
+
+                              <span class="art-sm-text credential-org-name">
+                                 Nepal Engineering College (NEC), Bhaktapur, Nepal
+                              </span>
+                            </div>
+
                               </div>
                               <div class="art-right-side">
                                 <span class="art-date"
@@ -639,9 +658,16 @@
                             <div class="art-card-header">
                               <div class="art-left-side">
                                 <h5>Data Entry Associate  </h5>
-                                <div class="art-el-suptitle mb-15">
-                                  Central Bureau of Statistics, Government of Nepal (GoN)
-                                </div>
+                                <!-- company + logo row -->
+                                <div class="credential-org">
+                              <img src="images/logo/statistics_logo.jpg"
+                                  alt="Central Bureau of Statistics"
+                                  class="art-testimonial-face credential-logo">
+
+                              <span class="art-sm-text credential-org-name">
+                                 Central Bureau of Statistics, Government of Nepal (GoN)
+                              </span>
+                            </div>
                               </div>
                               <div class="art-right-side">
                                 <span class="art-date"
@@ -684,11 +710,18 @@
                                 <h5>
                                   Bachelor of Computer Engineering
                                 </h5>
-                                <div class="art-el-suptitle mb-15">
-                                  Nepal Engineering College(NEC), Bhaktapur, Nepal
+                                <!-- company + logo row -->
+                                <div class="credential-org">
+                              <img src="images/logo/nec_college_stud_logo.jpg"
+                                  alt="Nepal Engineering College"
+                                  class="art-testimonial-face credential-logo">
+
+                              <span class="art-sm-text credential-org-name">
+                                 Nepal Engineering College(NEC), Bhaktapur, Nepal
                                   <br>
                                   Pokhara University(PU)
-                                </div>
+                              </span>
+                            </div>
                               </div>
                               <div class="art-right-side">
                                 <span class="art-date">
@@ -715,11 +748,18 @@
                                 <h5>
                                   XII, Computer Science
                                 </h5>
-                                <div class="art-el-suptitle mb-15">
-                                Viswa Niketan Secondary School, Kathmandu, Nepal
+                                <!-- company + logo row -->
+                                <div class="credential-org">
+                              <img src="images/logo/viswa_niketan_logo.jpg"
+                                  alt="Viswa Niketan College"
+                                  class="art-testimonial-face credential-logo">
+
+                              <span class="art-sm-text credential-org-name">
+                                  Viswa Niketan College, Kathmandu, Nepal
                                   <br>
                                   National Examinations Board(NEB)
-                                </div>
+                              </span>
+                            </div>
                               </div>
                               <div class="art-right-side">
                                 <span class="art-date">
@@ -791,8 +831,18 @@
                             </div>
                               <!-- button -->
                           <div class="art-buttons-frame">
-                            <a href="https://github.com/RajkumarKhadka/Ishara-Setu.git" class="art-link art-color-link art-w-chevron">Github Link</a>
-                          </div>
+                              <a href="https://github.com/RajkumarKhadka/Ishara-Setu.git"
+                                 class="art-link art-color-link art-w-chevron">
+                                 Github Link
+                             </a>
+
+                              <a href="javascript:void(0)"
+                                 onclick="openProject('ishara')"
+                                 class="art-link art-color-link art-w-chevron">
+                                 View Project
+                             </a>
+                            </div>
+
                           </div>
                         </div>
 
@@ -826,14 +876,491 @@
                           </div>
                           <!-- button -->
                           <div class="art-buttons-frame">
-                            <a href="https://github.com/RajkumarKhadka/Notera_fork.git" class="art-link art-color-link art-w-chevron">Github Link</a>
-                          </div>
+                              <a href="https://github.com/RajkumarKhadka/Notera_fork.git"
+                                 class="art-link art-color-link art-w-chevron">Github Link</a>
+
+                             <a href="javascript:void(0)"
+                                 onclick="openProject('notera')"
+                                 class="art-link art-color-link art-w-chevron">
+                                 View Project
+                             </a>
+                            </div>
+
                         </div>
                       </div>
                       <!-- timeline end -->
                     </div>
                   </div>
                 </div>
+
+
+        <!--Professional certification sections-->
+                <!-- container -->
+                <div class="container-fluid">
+                  <!-- row -->
+                  <div class="row">
+                    <!-- col -->
+                    <div class="col-lg-12">
+                      <!-- section title -->
+                      <div class="art-section-title">
+                        <!-- title frame -->
+                        <div class="art-title-frame">
+                          <!-- title -->
+                          <h4>Professional Certifications</h4>
+                        </div>
+                        <!-- title frame end -->
+                      </div>
+                      <!-- section title end -->
+                    </div>
+                    <!-- col end -->
+
+            <!-- individual professional certificate ko lagi thapeko-->
+                    <!-- col -->
+
+                    <!-- timeline -->
+                      <div class="col-lg-4 col-md-6">
+                       <div class="art-a art-service-icon-box">
+                        <div class="art-service-ib-content art-credential-card">
+
+                            <!-- header -->
+                            <div class="credential-header">
+                            <div class="credential-text">
+                              <h5 class="mb-2">Registered Computer Engineer </h5>
+                            
+                              <div class="credential-org">
+                                <img src="images/logo/nec_council_logo.jpeg"
+                                      alt="karmalaya"
+                                      class="art-testimonial-face credential-logo">
+                              
+                                <span class="art-sm-text credential-org-name">
+                                     Nepal Engineering Council
+                                </span>
+                             </div>
+
+                              <!-- DATE PILL (restored manually) -->
+                              <span class="art-date mt-0 d-inline-block">
+                                Issued on: 1st Feb 2026
+                             </span>
+                           </div>
+                          
+                         </div>
+                         <!-- credential id 
+                        <div class="credential-id mt-8">
+                          <strong>Credential ID:</strong> (licence no)
+                        </div>
+                          -->
+
+                         <!-- body -->
+                         <div class="art-sm-text mt-3">
+                            <strong>Licence No:</strong> ******
+                         </div>
+
+                         <!-- show credential -->
+                          <div class="art-buttons-frame mt-0">
+                           <a href="images/certificates/nec_licence.png"
+                               data-fancybox
+                               class="art-link art-color-link">
+                             Show credential
+                            </a>
+                         </div>
+
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- col end -->
+
+<!--Courses certification sections-->
+                <!-- container -->
+                <div class="container-fluid">
+                  <!-- row -->
+                  <div class="row">
+                    <!-- col -->
+                    <div class="col-lg-12">
+                      <!-- section title -->
+                      <div class="art-section-title">
+                        <!-- title frame -->
+                        <div class="art-title-frame">
+                          <!-- title -->
+                          <h4>Courses Certifications</h4>
+                        </div>
+                        <!-- title frame end -->
+                      </div>
+                      <!-- section title end -->
+                    </div>
+                    <!-- col end -->
+
+        <!--Individual courses certificate ko lagi thapeko-->
+                    <!-- timeline -->
+                      <div class="col-lg-4 col-md-6">
+                  <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content art-credential-card">
+
+                        <!-- header -->
+                       <div class="credential-header">
+
+                          <div class="credential-text">
+                           <h5 class="mb-2">Karmalaya-X:"From Ideas to Impact" </h5>
+
+                            <div class="credential-org">
+                             <img src="images/logo/CARRD_logo.jpg"
+                                   alt="karmalaya"
+                                    class="art-testimonial-face credential-logo">
+
+                              <span class="art-sm-text credential-org-name">
+                                 CARRD (Center for Applied Research and Rural Development)
+                             </span>
+                           </div>
+
+                            <!-- DATE PILL (restored manually) -->
+                           <span class="art-date mt-0 d-inline-block">
+                             Issued on: 19th June 2025 
+                           </span>
+                          </div>
+
+                       </div>
+                             <!-- credential id 
+                        <div class="credential-id mt-8">
+                          <strong>Credential ID:</strong> (licence no)
+                        </div>
+                          -->
+
+                        <!-- body -->
+                        <div class="art-sm-text mt-3">
+                          2 months of  <strong>Research and Development</strong><br>
+                        </div>
+
+                       <!-- show credential -->
+                       <div class="art-buttons-frame mt-0">
+                          <a href="images/certificates/karmalaya_X.jpg"
+                             data-fancybox
+                             class="art-link art-color-link">
+                           Show credential
+                         </a>
+                       </div>
+                     
+                     </div>
+                    </div>
+                    </div>
+
+
+                 <!-- col end -->
+
+
+
+                    <!-- col -->
+                    <!-- timeline -->
+                      <div class="col-lg-4 col-md-6">
+                          <div class="art-a art-service-icon-box">
+                           <div class="art-service-ib-content art-credential-card">
+
+                             <!-- header -->
+                             <div class="credential-header">
+
+                               <div class="credential-text">
+                                 <h5 class="mb-2">Python for Beginners </h5>
+
+                                  <div class="credential-org">
+                                    <img src="images/logo/skillup_logo.jpg"
+                                         alt="karmalaya"
+                                        class="art-testimonial-face credential-logo">
+
+                                    <span class="art-sm-text credential-org-name">
+                                      Simplilearn - Skillup
+                                   </span>
+                                 </div>
+
+                                 <!-- DATE PILL (restored manually) -->
+                                 <span class="art-date mt-0 d-inline-block">
+                                    Issued on: 19th Feb 2025
+                                   </span>
+                                  </div>
+
+                              </div>
+                              <!-- credential id 
+                          <div class="credential-id mt-8">
+                            <strong>Credential ID:</strong> (licence no)
+                          </div>
+                           -->
+
+                             <!-- body -->
+                             <div class="art-sm-text mt-3">
+                                <strong>Credential ID:</strong> 7929231
+                             </div>
+
+                             <!-- show credential -->
+                                                  <div class="art-buttons-frame mt-0">
+                                                    <a href="https://simpli-web.app.link/e/E2Q7t0Daa0b"
+                                                      target="_blank"
+                                                     class="art-link art-color-link">
+                                                     Show credential
+                                                    </a>
+                                                  </div>
+                                                
+                              </div>
+                          </div>
+                        </div>
+                        </div>
+                        </div>
+                 <!-- col end -->
+
+
+<!--Awards adn Honors certification sections-->
+                <!-- container -->
+          <div class="container-fluid">
+                  <!-- row -->
+            <div class="row">
+                    <!-- col -->
+                    <div class="col-lg-12">
+                      <!-- section title -->
+                      <div class="art-section-title">
+                        <!-- title frame -->
+                        <div class="art-title-frame">
+                          <!-- title -->
+                          <h4>Awards and Recognitions</h4>
+                        </div>
+                        <!-- title frame end -->
+                      </div>
+                      <!-- section title end -->
+                    </div>
+                    <!-- col end -->
+
+        <!--Individual award certificate ko lagi thapeko-->
+                    <!-- timeline -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="art-a art-service-icon-box">
+                    <div class="art-service-ib-content art-credential-card">
+
+                        <!-- header -->
+                      <div class="credential-header">
+
+                          <div class="credential-text">
+                           <h5 class="mb-2">Cybersecurity Workshop </h5>
+
+                            <div class="credential-org">
+                             <img src="images/logo/CESS.jpg"
+                                   alt="CESS"
+                                    class="art-testimonial-face credential-logo">
+
+                              <span class="art-sm-text credential-org-name">
+                                 CESS (Computer Engineering Students Society)
+                             </span>
+                           </div>
+
+                            <!-- DATE PILL (restored manually) -->
+                           <span class="art-date mt-0 d-inline-block">
+                             Awarded on: Apr 2025 
+                           </span>
+                          </div>
+
+                      </div>
+                             <!-- credential id 
+                        <div class="credential-id mt-8">
+                          <strong>Credential ID:</strong> (licence no)
+                        </div>
+                          -->
+
+                        <!-- body -->
+                       <!-- <div class="art-sm-text mt-3">
+                          2 months of  <strong>Research and Development</strong><br>
+                        </div> -->
+
+                       <!-- show credential -->
+                       <div class="art-buttons-frame mt-2">
+                          <a href="images/award_certificates/cybersecurity_ participate.jpg"
+                             data-fancybox
+                             class="art-link art-color-link">
+                           Show credential
+                         </a>
+                       </div>
+                     
+                    </div>
+                  </div>
+                </div>
+
+
+                 <!-- col end -->
+
+
+
+                    <!-- col -->
+                    <!-- timeline -->
+                      <div class="col-lg-4 col-md-6">
+                          <div class="art-a art-service-icon-box">
+                           <div class="art-service-ib-content art-credential-card">
+
+                             <!-- header -->
+                             <div class="credential-header">
+
+                               <div class="credential-text">
+                                 <h5 class="mb-2">Batch Topper - Spring Sem</h5>
+
+                                  <div class="credential-org">
+                                    <img src="images/logo/NSU.jpg"
+                                         alt="NEC Student Union"
+                                        class="art-testimonial-face credential-logo">
+
+                                    <span class="art-sm-text credential-org-name">
+                                      Nepal Student Union - NEC
+                                   </span>
+                                 </div>
+
+                                 <!-- DATE PILL (restored manually) -->
+                                 <span class="art-date mt-0 d-inline-block">
+                                    Awarded on: Aug 2024
+                                   </span>
+                                  </div>
+
+                              </div>
+                              <!-- credential id 
+                          <div class="credential-id mt-8">
+                            <strong>Credential ID:</strong> (licence no)
+                          </div>
+                           -->
+
+                             <!-- body -->
+                            <!-- <div class="art-sm-text mt-3">
+                                <strong>Credential ID:</strong> 7929231
+                             </div> -->
+
+              <!-- show credential -->
+                       <div class="art-buttons-frame mt-2">
+                          <a href="images/award_certificates/spring_sem_top.jpg"
+                             data-fancybox
+                             class="art-link art-color-link">
+                           Show credential
+                         </a>
+                       </div>
+                                                
+                              </div>
+                          </div>
+                        </div>
+                 <!-- col end -->
+
+                 <!-- timeline -->
+                      <div class="col-lg-4 col-md-6">
+                  <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content art-credential-card">
+
+                        <!-- header -->
+                       <div class="credential-header">
+
+                          <div class="credential-text">
+                           <h5 class="mb-2">Project Competition</h5>
+
+                            <div class="credential-org">
+                             <img src="images/logo/nec_ingenium.png"
+                                   alt="Ingenium"
+                                    class="art-testimonial-face credential-logo">
+
+                              <span class="art-sm-text credential-org-name">
+                                 Nec Ingenium 2023
+                             </span>
+                           </div>
+
+                            <!-- DATE PILL (restored manually) -->
+                           <span class="art-date mt-0 d-inline-block">
+                             Awarded on: 5th Oct 2023
+                           </span>
+                          </div>
+
+                       </div>
+                             <!-- credential id 
+                        <div class="credential-id mt-8">
+                          <strong>Credential ID:</strong> (licence no)
+                        </div>
+                          -->
+
+                        <!-- body -->
+                       <!-- <div class="art-sm-text mt-3">
+                          2 months of  <strong>Research and Development</strong><br>
+                        </div>
+                      -->
+
+                       <!-- show credential -->
+                       <div class="art-buttons-frame mt-2">
+                          <a href="images/award_certificates/nec_ingenium_participate.jpg"
+                             data-fancybox
+                             class="art-link art-color-link">
+                           Show credential
+                         </a>
+                       </div>
+                     
+                     </div>
+                    </div>
+                    </div>
+
+
+                 <!-- col end -->
+<!-- timeline -->
+                      <div class="col-lg-4 col-md-6">
+                  <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content art-credential-card">
+
+                        <!-- header -->
+                       <div class="credential-header">
+
+                          <div class="credential-text">
+                           <h5 class="mb-2">Full Scholarship in Computer Engineering </h5>
+
+                            <div class="credential-org">
+                             <img src="images/logo/pokhara_uni"
+                                   alt="pokhara_uni"
+                                    class="art-testimonial-face credential-logo">
+
+                              <span class="art-sm-text credential-org-name">
+                                 Pokhara University, Nepal
+                             </span>
+                           </div>
+
+                            <!-- DATE PILL (restored manually) -->
+                           <span class="art-date mt-0 d-inline-block">
+                             Awarded on: 26th May 2021 
+                           </span>
+                          </div>
+
+                       </div>
+                             <!-- credential id 
+                        <div class="credential-id mt-8">
+                          <strong>Credential ID:</strong> (licence no)
+                        </div>
+                          -->
+
+                        <!-- body -->
+                        <div class="art-sm-text mt-3">
+                          Scholarship Selection <strong>Committee, 2077</strong><br>
+                        </div>
+                    
+
+                       <!-- show credential -->
+                       <div class="art-buttons-frame mt-0">
+                          <a href="images/award_certificates/PU_full_scholarship.jpg"
+                             data-fancybox
+                             class="art-link art-color-link">
+                           Show credential
+                         </a>
+                       </div>
+                     
+                     </div>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+                 <!-- col end -->
+
+
+
+                    
+                    
+                    
+
+                    <!-- col -->
+                    <div class="col-lg-4 col-md-6">
+    <div class="art-a art-service-icon-box">
+
  
                 <!-- container -->
                 <!--<div class="container-fluid">
@@ -1047,7 +1574,7 @@
                       <!-- contact form frame end -->
                      <!-- <div class="visme_d" data-title="Business Contact Form" data-url="vdzq8jkw-business-contact-form" data-domain="forms" data-full-page="false" data-min-height="400px" data-form-id="116888"></div><script data-cfasync="false" src="js/email-decode.min.js"></script><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
                     <!--<div class="visme_d" data-title="Untitled Project" data-url="z4rk6wzy-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="17958"></div><script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/vismeforms-embed.js"></script>-->
-                    </div>
+                   <!-- </div>-->
                     <!-- col end -->
                   </div>
                   <!-- row end -->
@@ -1130,8 +1657,56 @@
     <!-- swup js -->
     <script src="js/swup.min.js"></script>
 
+    <!--pop up project ko lagi-->
+
+    <!-- PROJECT POPUP -->
+            <!-- PROJECT POPUP -->
+            <div id="projectModal" class="art-modal" style="display:none;">
+              <div class="art-modal-overlay" onclick="closeProject()"></div>
+
+              <div class="art-modal-content">
+
+                <span class="art-modal-close" onclick="closeProject()">×</span>
+
+                <!-- TOP HALF: SLIDER -->
+                <div class="swiper-container project-swiper">
+                  <div class="swiper-wrapper" id="projectSlides">
+                    <!-- slides injected by JS -->
+                  </div>
+
+                  <!-- navigation -->
+                  <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                 <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- BOTTOM HALF: FIXED CONTENT -->
+                <div class="project-info">
+                  <h3 id="modalTitle"></h3>
+                  <span class="art-date" id="modalYear"></span>
+                 <p id="modalDesc"></p>
+                </div>
+            <!--project pop up end-->
+  </div>
+</div>
+
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
     <!-- main js -->
     <script src="js/main.js"></script>
-  
+
+    <!--thapeko image full screen ko lagi-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+        <script>
+          Fancybox.bind("[data-fancybox]", {
+          Thumbs: false,
+            Toolbar: true
+          });
+        </script>
+        <!--project pop up-->
+        
 
 </body></html>
