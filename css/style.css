@@ -3586,6 +3586,10 @@ html.is-animating .fade-left {
     color: #ffc107 !important;
   }
 }
+/* Remove % from circular progress text */
+.progressbar-text::after {
+  content: "";
+}
 
 
 

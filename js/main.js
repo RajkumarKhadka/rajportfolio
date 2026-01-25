@@ -113,17 +113,21 @@ $(function () {
     duration: 1400,
     delay: 2500,
     trailWidth: 7,
+    //step: function (state, circle) {
+    //  var value = Math.round(circle.value() * 100);
+     // if (value === 0) {
+     //   circle.setText("Native");
+     // } else {
+        //circle.setText(value);
+     // }
+    //},
     step: function (state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
+      circle.setText("Native");
     },
   });
 
   bar.animate(1);
+
 
   //english
   var bar = new ProgressBar.Circle(circleprog2, {
@@ -132,13 +136,16 @@ $(function () {
     duration: 1400,
     delay: 2600,
     trailWidth: 7,
+    //step: function (state, circle) {
+     // var value = Math.round(circle.value() * 100);
+     // if (value === 0) {
+      //  circle.setText("");
+      //} else {
+        //circle.setText(value);
+     // }
+    //},
     step: function (state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
+      circle.setText("Proficient");
     },
   });
 
@@ -151,13 +158,16 @@ $(function () {
     duration: 1400,
     delay: 2700,
     trailWidth: 7,
+    //step: function (state, circle) {
+      //var value = Math.round(circle.value() * 100);
+     // if (value === 0) {
+      //  circle.setText("");
+      //} else {
+        //circle.setText(value);
+      //}
+    //},
     step: function (state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
+      circle.setText("Novice");
     },
   });
 
@@ -176,7 +186,7 @@ $(function () {
       height: "100%",
     },
     step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
+      //bar.setText(Math.round(bar.value() * 100) + " %");
     },
   });
 
@@ -194,7 +204,7 @@ $(function () {
       height: "100%",
     },
     step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
+      //bar.setText(Math.round(bar.value() * 100) + " %");
     },
   });
 
@@ -212,7 +222,7 @@ $(function () {
       height: "100%",
     },
     step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
+      //bar.setText(Math.round(bar.value() * 100) + " %");
     },
   });
 
@@ -231,7 +241,7 @@ $(function () {
       height: "100%",
     },
     step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
+      //bar.setText(Math.round(bar.value() * 100) + " %");
     },
   });
 
@@ -249,7 +259,7 @@ $(function () {
       height: "100%",
     },
     step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
+      //bar.setText(Math.round(bar.value() * 100) + " %");
     },
   });
 
