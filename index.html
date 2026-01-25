@@ -301,6 +301,58 @@
 
             <!-- swup container -->
             <div class="transition-fade" id="swup">
+
+              <!--sticky navbar ko lagi 2nd choti try-->
+              <!-- TOP STICKY NAVBAR -->
+<nav class="top-sticky-nav">
+  
+<ul class="nav-links">
+  <li><a data-target="what-i-provide">What I Provide</a></li>
+  <li><a data-target="work-experience">Experience</a></li>
+  <li><a data-target="education">Education</a></li>
+  <li><a data-target="projects">Projects</a></li>
+
+  <!-- DROPDOWN -->
+  <li class="nav-dropdown">
+    <span>Certifications ▾</span>
+    <ul class="dropdown-menu">
+      <li><a data-target="professional-certifications">Professional</a></li>
+      <li><a data-target="course-certifications">Courses</a></li>
+    </ul>
+  </li>
+  <li><a data-target="awards">Awards</a></li>
+  <li><a data-target="contact">Contact</a></li>
+</ul>
+
+
+  <!-- Hamburger -->
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <a data-target="what-i-provide">What I Provide</a>
+  <a data-target="work-experience">Experience</a>
+  <a data-target="education">Education</a>
+  <a data-target="projects">Projects</a>
+
+  <!-- MOBILE DROPDOWN -->
+  <div class="mobile-dropdown">
+    <span>Certifications ▾</span>
+    <div class="mobile-dropdown-menu">
+      <a data-target="professional-certifications">Professional</a>
+      <a data-target="course-certifications">Courses</a>
+    </div>
+  </div>
+  <a data-target="awards">Awards</a>
+  <a data-target="contact">Contact</a>
+</div>
+
+<!--sticky navbar ko lagi 2nd choti try end-->
+
+
               <!-- scroll frame -->
               <div id="scrollbar" class="art-scroll-frame">
                 <!--sticky nabvar ko lagi code reyy-->
@@ -335,7 +387,7 @@
                     <!-- col -->
                     <div class="col-lg-12">
                       <!-- banner -->
-                      <div class="art-a art-banner" style="background-image: url(images/bgim.jpg)">
+                      <div class="art-a art-banner" style="background-image: url(images/bg.jpg)">
                         <!-- banner back -->
                         <div class="art-banner-back"></div>
                         <!-- banner dec -->
@@ -350,10 +402,13 @@
                             </h1>
                             <!-- suptitle -->
                             <div class="art-lg-text art-code mb-25">
-                              &lt;<i>code</i>&gt; <br>
-                              print("From imagination to implementation")
-                              <!--<span class="txt-rotate" data-period="2000" data-rotate="[ " develop="" long-term="" it="" plans="" and="" roadmaps.","keep="" abreast="" of="" technological="" trends.",="" "plan="" for="" disaster="" recovery="" business="" continuity..",="" "oversee="" projects="" from="" inception="" to="" completion.",="" "establish="" enforce="" data="" management="" policies="" procedures.","conduct="" regular="" security="" audits="" risk="" assessments"="" ]"=""></span>-->
-                            </div>
+                                &lt;<i>code</i>&gt;<br>
+                                <span id="typewriter"><span class="cursor">|</span></span><br>
+                                &lt;<i>/code</i>&gt;<br>
+                              </div>
+
+
+
                             <div class="art-buttons-frame">
                               <!-- button -->
                               <a href="files/cv.pdf" download="cv.pdf"
@@ -361,12 +416,13 @@
                                     <span>Download CV</span>
                                   </a>
                               <!-- button -->
-                               <a href="mailto:rajkumarkd01@gmail.com
-                                  ?subject=Work%20Opportunity
-                                  &body=Hello%20Raj,%0A%0AI%20would%20like%20to%20discuss%20a%20work%20opportunity."
-                                  class="art-btn art-btn-md">
-                                    <span>Hire Me</span>
-                                  </a>
+                              <a href="mailto:rajkumarkd01@gmail.com
+                                ?subject=Work%20Opportunity
+                                &body=Hello%20Raj,%0A%0AI%20would%20like%20to%20discuss%20a%20work%20opportunity."
+                                class="art-date art-hire-pill">
+                                 HIRE ME >
+                              </a>
+
                             </div>
                           </div>
                           <!-- main title end -->
@@ -1049,6 +1105,59 @@
 
         <!--Individual courses certificate ko lagi thapeko-->
                     <!-- timeline -->
+                     <div class="col-lg-4 col-md-6">
+                  <div class="art-a art-service-icon-box">
+                    <div class="art-service-ib-content art-credential-card">
+
+                        <!-- header -->
+                      <div class="credential-header">
+
+                          <div class="credential-text">
+                           <h5 class="mb-2">Cybersecurity Workshop </h5>
+
+                            <div class="credential-org">
+                             <img src="images/logo/CESS.jpg"
+                                   alt="CESS"
+                                    class="art-testimonial-face credential-logo">
+
+                              <span class="art-sm-text credential-org-name">
+                                 CESS (Computer Engineering Students Society)
+                             </span>
+                           </div>
+
+                            <!-- DATE PILL (restored manually) -->
+                           <span class="art-date mt-0 d-inline-block">
+                             Issued on: Apr 2025 
+                           </span>
+                          </div>
+
+                      </div>
+                             <!-- credential id 
+                        <div class="credential-id mt-8">
+                          <strong>Credential ID:</strong> (licence no)
+                        </div>
+                          -->
+
+                        <!-- body -->
+                       <!-- <div class="art-sm-text mt-3">
+                          2 months of  <strong>Research and Development</strong><br>
+                        </div> -->
+
+                       <!-- show credential -->
+                       <div class="art-buttons-frame mt-3">
+                          <a href="images/award_certificates/cybersecurity_ participate.jpg"
+                             data-fancybox
+                             class="art-link art-color-link">
+                           Show credential
+                         </a>
+                       </div>
+                     
+                    </div>
+                  </div>
+                </div>
+
+                <!-- col end -->
+
                       <div class="col-lg-4 col-md-6">
                   <div class="art-a art-service-icon-box">
                       <div class="art-service-ib-content art-credential-card">
@@ -1083,7 +1192,7 @@
                           -->
 
                         <!-- body -->
-                        <div class="art-sm-text mt-3">
+                        <div class="art-sm-text mt-0">
                           2 months of  <strong>Research and Development</strong><br>
                         </div>
 
@@ -1192,21 +1301,21 @@
                       <div class="credential-header">
 
                           <div class="credential-text">
-                           <h5 class="mb-2">Cybersecurity Workshop </h5>
+                           <h5 class="mb-2">Dean’s List Recognition </h5>
 
                             <div class="credential-org">
-                             <img src="images/logo/CESS.jpg"
+                             <img src="images/logo/pokhara_uni.jpg"
                                    alt="CESS"
                                     class="art-testimonial-face credential-logo">
 
                               <span class="art-sm-text credential-org-name">
-                                 CESS (Computer Engineering Students Society)
+                                 Pokhara University (PU), Nepal
                              </span>
                            </div>
 
                             <!-- DATE PILL (restored manually) -->
                            <span class="art-date mt-0 d-inline-block">
-                             Awarded on: Apr 2025 
+                             Awarded on: 20th Feb 2026 
                            </span>
                           </div>
 
@@ -1224,7 +1333,7 @@
 
                        <!-- show credential -->
                        <div class="art-buttons-frame mt-2">
-                          <a href="images/award_certificates/cybersecurity_ participate.jpg"
+                          <a href="images/logo/pokhara_uni.jpg"
                              data-fancybox
                              class="art-link art-color-link">
                            Show credential
@@ -1250,7 +1359,7 @@
                              <div class="credential-header">
 
                                <div class="credential-text">
-                                 <h5 class="mb-2">Batch Topper - Spring Sem</h5>
+                                 <h5 class="mb-2">Batch Topper - Spring Semester</h5>
 
                                   <div class="credential-org">
                                     <img src="images/logo/NSU.jpg"
@@ -1361,12 +1470,12 @@
                            <h5 class="mb-2">Full Scholarship in Computer Engineering </h5>
 
                             <div class="credential-org">
-                             <img src="images/logo/pokhara_uni"
+                             <img src="images/logo/pokhara_uni.jpg"
                                    alt="pokhara_uni"
                                     class="art-testimonial-face credential-logo">
 
                               <span class="art-sm-text credential-org-name">
-                                 Pokhara University, Nepal
+                                 Pokhara University (PU), Nepal
                              </span>
                            </div>
 
@@ -1780,43 +1889,243 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const scrollFrame = document.getElementById("scrollbar");
-
-  if (!scrollFrame) {
-    console.error("❌ scrollbar element not found");
+  if (!scrollFrame || typeof Scrollbar === "undefined") {
+    console.warn("Scrollbar not ready yet");
     return;
   }
 
-  // Get Scrollbar.js instance
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
+  const scrollbar = Scrollbar.get(scrollFrame);
+  if (!scrollbar) {
+    console.warn("Scrollbar instance not found");
+    return;
+  }
 
-  const scrollFrame = document.getElementById("scrollbar");
-  if (!scrollFrame) return;
-
-  const scrollbarInstance = Scrollbar.get(scrollFrame);
-  if (!scrollbarInstance) return;
-
-  document.querySelectorAll(".right-sticky-nav a").forEach(link => {
+  // NAV LINK SCROLL
+  document.querySelectorAll("[data-target]").forEach(link => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
-      e.stopPropagation();
 
       const targetId = this.dataset.target;
       const targetEl = document.getElementById(targetId);
       if (!targetEl) return;
 
-      const scrollTop =
+      const y =
         targetEl.getBoundingClientRect().top +
-        scrollbarInstance.scrollTop;
+        scrollbar.scrollTop -
+        80;
 
-      scrollbarInstance.scrollTo(0, scrollTop - 80, 600);
+      scrollbar.scrollTo(0, y, 700);
+
+      const menu = document.querySelector(".mobile-menu");
+      if (menu) menu.style.right = "-100%";
     });
   });
 
+  // HAMBURGER
+  const hamburger = document.querySelector(".hamburger");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener("click", () => {
+      mobileMenu.style.right =
+        mobileMenu.style.right === "0px" ? "-100%" : "0px";
+    });
+  }
+
 });
 </script>
--->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-<!--stickybar ko smooth scroll ko lagi end -->      
+  // MOBILE CERTIFICATION DROPDOWN
+  const mobileDropdown = document.querySelector(".mobile-dropdown span");
+  const mobileMenu = document.querySelector(".mobile-dropdown-menu");
+
+  if (mobileDropdown && mobileMenu) {
+    mobileDropdown.addEventListener("click", () => {
+      mobileMenu.style.display =
+        mobileMenu.style.display === "block" ? "none" : "block";
+    });
+  }
+
+});
+</script>-->
+
+
+
+<!--stickybar ko smooth scroll ko lagi end -->    
+
+<!--mobile ma view project ko pop up close garne x button le kaam garne banauna-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const closeBtn = document.querySelector(".art-modal-close");
+
+  if (!closeBtn) return;
+
+  closeBtn.addEventListener("touchstart", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    closeProject();
+  }, { passive: false });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const modalContent = document.querySelector(".art-modal-content");
+
+  if (!modalContent) return;
+
+  modalContent.addEventListener("click", e => e.stopPropagation());
+  modalContent.addEventListener("touchstart", e => e.stopPropagation(), { passive: false });
+});
+</script>
+
+<!--mobile ma view project ko pop up close garne x button le kaam garne banauna end-->
+
+<!-- real time typing effect -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const el = document.getElementById("typewriter");
+
+  const texts = [
+    'From imagination to implementation',
+    'Turning ideas into reality',
+    'Code. Create. Innovate.'
+  ];
+
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  const typingSpeed = 150;
+  const deletingSpeed = 30;
+  const pauseAfterTyping = 700;
+  const pauseAfterDeleting = 600;
+
+  function typeLoop() {
+    const currentText = texts[textIndex];
+
+    if (!isDeleting) {
+      // typing
+      charIndex++;
+      el.innerHTML =
+        currentText.substring(0, charIndex) +
+        '<span class="cursor">|</span>';
+
+      if (charIndex === currentText.length) {
+        setTimeout(() => (isDeleting = true), pauseAfterTyping);
+      }
+    } else {
+      // deleting
+      charIndex--;
+      el.innerHTML =
+        currentText.substring(0, charIndex) +
+        '<span class="cursor">|</span>';
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(() => {}, pauseAfterDeleting);
+      }
+    }
+
+    setTimeout(
+      typeLoop,
+      isDeleting ? deletingSpeed : typingSpeed
+    );
+  }
+
+  typeLoop();
+});
+</script>
+<!-- real time typing effect end-->
+<!--sticky navbar-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const scrollFrame = document.getElementById("scrollbar");
+  if (!scrollFrame || typeof Scrollbar === "undefined") {
+    console.warn("Scrollbar not ready yet");
+    return;
+  }
+
+  const scrollbar = Scrollbar.get(scrollFrame);
+  if (!scrollbar) {
+    console.warn("Scrollbar instance not found");
+    return;
+  }
+
+  // ===============================
+  // SMOOTH SCROLL
+  // ===============================
+  document.querySelectorAll("[data-target]").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.dataset.target;
+      const targetEl = document.getElementById(targetId);
+      if (!targetEl) return;
+
+      const y =
+        targetEl.getBoundingClientRect().top +
+        scrollbar.scrollTop - 80;
+
+      scrollbar.scrollTo(0, y, 700);
+
+      const menu = document.querySelector(".mobile-menu");
+      if (menu) menu.style.right = "-100%";
+    });
+  });
+
+  // ===============================
+  // HAMBURGER TOGGLE
+  // ===============================
+  const hamburger = document.querySelector(".hamburger");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener("click", () => {
+      mobileMenu.style.right =
+        mobileMenu.style.right === "0px" ? "-100%" : "0px";
+    });
+  }
+
+  // ===============================
+  // MOBILE CERTIFICATIONS DROPDOWN
+  // ===============================
+  const mobileDropdown = document.querySelector(".mobile-dropdown span");
+  const mobileDropdownMenu = document.querySelector(".mobile-dropdown-menu");
+
+  if (mobileDropdown && mobileDropdownMenu) {
+    mobileDropdown.addEventListener("click", () => {
+      mobileDropdownMenu.style.display =
+        mobileDropdownMenu.style.display === "block" ? "none" : "block";
+    });
+  }
+
+  // ===============================
+  // DESKTOP CERTIFICATIONS DROPDOWN (FIX-1)
+  // ===============================
+  const certToggle = document.querySelector(".nav-dropdown span");
+  const certWrapper = document.querySelector(".nav-dropdown");
+
+  if (certToggle && certWrapper) {
+    certToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      certWrapper.classList.toggle("open");
+    });
+
+    document.addEventListener("click", function () {
+      certWrapper.classList.remove("open");
+    });
+  }
+
+});
+</script>
+
+<!--sticky navbar end-->
+
+
 
 </body></html>

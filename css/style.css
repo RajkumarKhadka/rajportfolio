@@ -3109,68 +3109,483 @@ html.is-animating .fade-left {
   }
 }
 /*end*/
-/*sticky nabar ko lagi rey*/
+
+
+/*mobile ma view project ko pop up close garne x button le kaam garne banauna*/
+.art-modal-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.art-modal-content {
+  position: relative;
+  z-index: 2;
+}
+
+.art-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 3;               /* 🔥 ABOVE overlay */
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+/*end*/
+/*hire me button ma pill shaped background add garne*/
+/* Hire Me pill */
+.art-hire-pill {
+  font-size: 12px;
+  padding: 6px 14px;
+  text-decoration: none;
+  cursor: pointer;
+
+  display: inline-block;   /* 🔥 REQUIRED for transform */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.art-hire-pill:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+.art-hire-pill {
+  font-size: 12px;
+  font-weight: 600;   /* 👈 makes "Hire Me" bold but elegant */
+  padding: 6px 14px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+/*end*/
+/*typing effect banner ma lyauna*/
+/* ===== TYPING TEXT STABILITY FIX ===== */
+.txt-rotate {
+  display: inline-block;
+  min-width: 36ch;          /* ⬅ prevents width jumping */
+  white-space: nowrap;
+  font-family: Consolas, monospace;
+}
+
+.txt-rotate::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+#typewriter {
+  display: inline-block;
+  min-width: 38ch;          /* prevents jitter */
+  white-space: nowrap;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+/*end*/
+/*download cv button lai thorai tala jharne css*/
+/* Mobile spacing fix for banner buttons */
+@media (max-width: 768px) {
+  .art-buttons-frame {
+    margin-top: 20px; /* adjust if needed: 16–32px */
+  }
+}
+/*end*/
+/*sticky mavbar 2nd try*/
 /* ===============================
-   RIGHT COLUMN STICKY NAVBAR
-   =============================== */
-/*
-.right-sticky-nav {
-  position: sticky;
+   TOP STICKY NAVBAR
+================================ */
+.top-sticky-nav {
+  position: fixed;
   top: 0;
-  z-index: 50;
-  background: #1e1e28;
-  padding: 12px 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.right-sticky-nav ul {
+  left: 300px; /* width of left sidebar */
+  right: 0;
+  height: 60px;
+  background: rgba(30,30,40,0.95);
   display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  z-index: 999;
+  backdrop-filter: blur(6px);
 }
 
-.right-sticky-nav a,
-.right-sticky-nav span {
+.nav-links {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+}
+
+.nav-links a {
   color: #fff;
   font-size: 14px;
   cursor: pointer;
-  text-decoration: none;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
-.right-sticky-nav a:hover,
-.right-sticky-nav span:hover {
+.nav-links a.active,
+.nav-links a:hover {
   opacity: 1;
   color: #ffc107;
 }
 
-/* DROPDOWN *//*
-.right-sticky-nav .dropdown {
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #fff;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  width: 240px;
+  height: calc(100vh - 60px);
+  background: #1e1e28;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 998;
+}
+
+.mobile-menu a {
+  padding: 12px 0;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .top-sticky-nav {
+    left: 0;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* ===============================
+   NAVBAR DROPDOWN
+================================ */
+
+/* Desktop dropdown */
+.nav-dropdown {
   position: relative;
 }
 
-.right-sticky-nav .dropdown-menu {
-  display: none;
+.nav-dropdown span {
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.nav-dropdown:hover span {
+  opacity: 1;
+  color: #ffc107;
+}
+
+.dropdown-menu {
   position: absolute;
-  top: 24px;
+  top: 30px;
   left: 0;
   background: #2a2a35;
-  padding: 10px;
   border-radius: 6px;
+  padding: 10px 14px;
+  display: none;
+  min-width: 160px;
 }
 
-.right-sticky-nav .dropdown:hover .dropdown-menu {
+/*.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}*/
+/* ===============================
+   CLICK-BASED DROPDOWN
+================================ */
+
+.dropdown-menu {
+  display: none;
+}
+
+.nav-dropdown.open .dropdown-menu {
   display: block;
 }
+/*end*/
 
-.right-sticky-nav .dropdown-menu li {
-  margin-bottom: 6px;
+.dropdown-menu li {
+  margin-bottom: 8px;
 }
 
-.right-sticky-nav .dropdown-menu li:last-child {
+.dropdown-menu li:last-child {
   margin-bottom: 0;
-}*/
+}
+
+.dropdown-menu a {
+  color: #fff;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.dropdown-menu a:hover {
+  opacity: 1;
+  color: #ffc107;
+}
+
+/* ===============================
+   MOBILE DROPDOWN
+================================ */
+
+.mobile-dropdown {
+  padding: 12px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-dropdown-menu {
+  display: none;
+  padding-left: 12px;
+}
+
+.mobile-dropdown-menu a {
+  display: block;
+  padding: 8px 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/*end
+/*hamburger on right for mobile and ... r dot restored
+/* ===============================
+   TOP STICKY NAVBAR LAYOUT
+================================ */
+
+.top-sticky-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Push nav links to the right (desktop) */
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 28px;
+}
+
+/* Hamburger always on the right */
+.hamburger {
+  margin-left: 20px;
+}
+
+/* Mobile: keep hamburger on right */
+@media (max-width: 768px) {
+  .hamburger {
+    margin-left: auto;
+  }
+}
+/* ===============================
+   NAVBAR FONT CONSISTENCY
+================================ */
+
+.nav-links a,
+.nav-dropdown span,
+.dropdown-menu a,
+.mobile-menu a,
+.mobile-dropdown span,
+.mobile-dropdown-menu a {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+/* ===============================
+   MOBILE MENU DIVIDERS
+================================ */
+
+.mobile-menu > a,
+.mobile-dropdown {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.mobile-dropdown-menu a {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+/* ===============================
+   MOBILE NAVBAR FIX
+================================ */
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  .top-sticky-nav {
+    left: 60px; /* space for ⋮ button */
+  }
+}
+/* ===============================
+   DESKTOP DROPDOWN COLOR FIX
+================================ */
+
+.dropdown-menu a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.dropdown-menu a:hover {
+  opacity: 1;
+  color: #ffc107;
+}
+
+
+
 /*end*/
+/* ===============================
+   MOBILE DROPDOWN DIVIDER FIX
+================================ */
+
+.mobile-dropdown {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.mobile-dropdown-menu a {
+  border-bottom: none;
+}
+
+.mobile-dropdown-menu a:last-child {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.mobile-dropdown-menu {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+/*end*/
+/* ===============================
+   RESPONSIVE NAVBAR BACKGROUND
+================================ */
+
+/* MOBILE — fully transparent */
+.top-sticky-nav {
+  background: transparent;
+  backdrop-filter: none;
+}
+
+/* LAPTOP & DESKTOP — gradient navbar */
+@media (min-width: 992px) {
+  .top-sticky-nav {
+    background: linear-gradient(
+      to bottom,
+      rgba(15, 15, 25, 0.75),
+      rgba(15, 15, 25, 0)
+    );
+    backdrop-filter: blur(6px);
+  }
+}
+/*last milako*/
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  .top-sticky-nav {
+    left: 60px;
+  }
+}
+.dropdown-menu a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.dropdown-menu a:hover {
+  opacity: 1;
+  color: #ffc107;
+}
+.mobile-dropdown {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.mobile-dropdown-menu {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.mobile-dropdown-menu a {
+  border-bottom: none;
+}
+.mobile-dropdown-menu a:last-child {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+/* ===============================
+   DESKTOP DROPDOWN VISIBILITY FIX
+================================ */
+
+@media (min-width: 992px) {
+  .dropdown-menu a {
+    color: #ffffff;     /* pure white */
+    opacity: 1;         /* remove fade */
+    font-weight: 500;
+  }
+
+  .dropdown-menu a:hover {
+    color: #ffc107;     /* yellow on hover */
+  }
+}
+/* ===============================
+   FORCE DESKTOP DROPDOWN VISIBILITY
+================================ */
+
+@media (min-width: 992px) {
+  .nav-dropdown .dropdown-menu {
+    background: rgba(20, 20, 30, 0.95); /* solid dark background */
+    opacity: 1 !important;
+  }
+
+  .nav-dropdown .dropdown-menu li,
+  .nav-dropdown .dropdown-menu a {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    font-weight: 500;
+  }
+
+  .nav-dropdown .dropdown-menu a:hover {
+    color: #ffc107 !important;
+  }
+}
+
+
+

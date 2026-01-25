@@ -738,7 +738,10 @@ function openProject(project) {
 }
 
 function closeProject() {
-  document.getElementById("projectModal").style.display = "none";
+  const modal = document.getElementById("projectModal");
+  modal.style.display = "none";
+  document.body.style.overflow = "";
 }
+
 
 //emd
