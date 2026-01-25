@@ -3586,10 +3586,10 @@ html.is-animating .fade-left {
     color: #ffc107 !important;
   }
 }
-/* Remove % from circular progress text */
-.progressbar-text::after {
-  content: "";
+/* Remove % sign from circular language skills */
+.art-lang-skills .progressbar-text::after {
+  content: '' !important;
 }
-
+/*end*/
 
 

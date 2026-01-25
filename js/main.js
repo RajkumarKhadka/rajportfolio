@@ -167,7 +167,7 @@ $(function () {
       //}
     //},
     step: function (state, circle) {
-      circle.setText("Novice");
+      circle.setText("Basic");
     },
   });
 
@@ -190,7 +190,7 @@ $(function () {
     },
   });
 
-  bar.animate(0.85);
+  bar.animate(0.8);
 
   //DSA
   var bar = new ProgressBar.Line(lineprog2, {
@@ -208,7 +208,7 @@ $(function () {
     },
   });
 
-  bar.animate(0.75);
+  bar.animate(0.7);
 
     //Python
   var bar = new ProgressBar.Line(lineprog3, {
@@ -226,7 +226,7 @@ $(function () {
     },
   });
 
-  bar.animate(0.7);
+  bar.animate(0.63);
 
   //OS
 
@@ -263,7 +263,7 @@ $(function () {
     },
   });
 
-  bar.animate(0.7);
+  bar.animate(0.65);
 
   // Contact form
   $(".art-input").keyup(function () {
