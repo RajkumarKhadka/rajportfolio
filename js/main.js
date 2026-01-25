@@ -105,6 +105,8 @@ $(function () {
   });
 
   // progressbars
+  //circular progress bars for language skills
+  //nepali
   var bar = new ProgressBar.Circle(circleprog1, {
     strokeWidth: 7,
     easing: "easeInOut",
@@ -123,6 +125,7 @@ $(function () {
 
   bar.animate(1);
 
+  //english
   var bar = new ProgressBar.Circle(circleprog2, {
     strokeWidth: 7,
     easing: "easeInOut",
@@ -139,8 +142,9 @@ $(function () {
     },
   });
 
-  bar.animate(0.9);
+  bar.animate(0.7);
 
+  //hindi
   var bar = new ProgressBar.Circle(circleprog3, {
     strokeWidth: 7,
     easing: "easeInOut",
@@ -157,8 +161,10 @@ $(function () {
     },
   });
 
-  bar.animate(0.7);
+  bar.animate(0.6);
 
+  //horizontal progress bars for course skills
+  //C/C++
   var bar = new ProgressBar.Line(lineprog1, {
     strokeWidth: 1.72,
     easing: "easeInOut",
@@ -174,8 +180,9 @@ $(function () {
     },
   });
 
-  bar.animate(0.9);
+  bar.animate(0.85);
 
+  //DSA
   var bar = new ProgressBar.Line(lineprog2, {
     strokeWidth: 1.72,
     easing: "easeInOut",
@@ -191,8 +198,9 @@ $(function () {
     },
   });
 
-  bar.animate(0.95);
+  bar.animate(0.75);
 
+    //Python
   var bar = new ProgressBar.Line(lineprog3, {
     strokeWidth: 1.72,
     easing: "easeInOut",
@@ -208,7 +216,9 @@ $(function () {
     },
   });
 
-  bar.animate(0.75);
+  bar.animate(0.7);
+
+  //OS
 
   var bar = new ProgressBar.Line(lineprog4, {
     strokeWidth: 1.72,
@@ -227,6 +237,7 @@ $(function () {
 
   bar.animate(0.65);
 
+  //Embedded System
   var bar = new ProgressBar.Line(lineprog5, {
     strokeWidth: 1.72,
     easing: "easeInOut",
@@ -242,7 +253,7 @@ $(function () {
     },
   });
 
-  bar.animate(0.85);
+  bar.animate(0.7);
 
   // Contact form
   $(".art-input").keyup(function () {
