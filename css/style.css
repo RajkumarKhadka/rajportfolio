@@ -3630,5 +3630,38 @@ html.is-animating .fade-left {
   }
 }
 /*end*/
+/*triple dot button alive garne css*/
+/* ===============================
+   MOBILE 3-DOT (INFO BAR) ATTENTION
+================================ */
+@media (max-width: 768px) {
 
+  .art-info-bar-btn i {
+    color: #d59245; /* yellow accent */
+    font-size: 20px;
+    animation: dotPulse 1.8s infinite ease-in-out;
+  }
+
+  @keyframes dotPulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.25);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+  }
+
+  /* nice tap feedback */
+  .art-info-bar-btn:active i {
+    transform: scale(0.9);
+    animation: none;
+  }
+}
+/*end*/
 
