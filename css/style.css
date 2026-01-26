@@ -3637,7 +3637,7 @@ html.is-animating .fade-left {
 @media (max-width: 768px) {
 
   .art-info-bar-btn i {
-    color: #d59245; /* yellow accent */
+    color: hsl(62, 98%, 50%); /* yellow accent */
     font-size: 20px;
     animation: dotPulse 1.8s infinite ease-in-out;
   }
